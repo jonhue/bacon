@@ -94,10 +94,10 @@ pub fn integrate<N: ComplexField, F: FnMut(N::RealField) -> N>(
     tol: N::RealField,
 ) -> Result<N, (N, String)> {
     if left >= right {
-        return Err((N::RealField::from_f64(0.).unwrap(), "integrate: left must be less than right".to_owned()));
+        return Err((N::zero(), "integrate: left must be less than right".to_owned()));
     }
     if !tol.is_sign_positive() {
-        return Err((N::RealField::from_f64(0.).unwrap(), "integrate: tolerance must be positive".to_owned()));
+        return Err((N::zero(), "integrate: tolerance must be positive".to_owned()));
     }
 
     let half = N::RealField::from_f64(0.5).unwrap();
