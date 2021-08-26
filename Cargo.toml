@@ -1,12 +1,12 @@
 [package]
-name = "bacon-sci"
+name = "bacon-sci-1"
 version = "0.11.0"
-authors = ["aftix <aftix@aftix.xyz>"]
+authors = ["aftix <aftix@aftix.xyz>", "Jonas Hübotter <jonas.huebotter@gmail.com>"]
 edition = "2018"
 license="MIT"
 description="Scientific computing in Rust"
-homepage="https://github.com/aftix/bacon"
-repository="https://github.com/aftix/bacon"
+homepage="https://github.com/jonhue/bacon"
+repository="https://github.com/jonhue/bacon"
 readme="README.md"
 keywords=["numeric", "science", "integration", "quadrature"]
 categories=["science"]
